@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteomonitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      Meteomonitor <span>⚡</span>
+    </div>
+    <div class="menu">
+      <input type="image" src="img/Question.svg" alt="Help">
+      <input type="image" src="img/Bell.svg" alt="Notifications">
+      <input type="image" src="img/Gear.svg" alt="Settings">
+    </div>
+    <div class="divider"></div>
+    <div class="user">
+      <img src="img/user.png" alt="User" />
+      <span>Фамилия Имя</span>
+      <img src="img/CaretDown.svg" class="arrow">
+    </div>
+  </header>
+
+  <div class="filters">
+    <button>Фильтры</button>
+    <div class="lines">
+      Линия
+      <select>
+        <option>Жигулевская ГЭС - Сызрань I цепь</option>
+        <option>Жигулевская ГЭС - Сызрань II цепь</option>
+      </select>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Номер столба <input type="image" src="img/free-icon-sorting-8066247.png" alt="Сортировать"></th>
+        <th>Линия <input type="image" src="img/free-icon-sorting-8066247.png" alt="Сортировать"></th>
+        <th>Состояние <input type="image" src="img/free-icon-sorting-8066247.png" alt="Сортировать"></th>
+        <th>Обновлено <input type="image" src="img/free-icon-sorting-8066247.png" alt="Сортировать"></th>
+        <th>Координаты <input type="image" src="img/free-icon-sorting-8066247.png" alt="Сортировать"></th>
+        <th>Вероятность обледенения <input type="image" src="img/free-icon-sorting-8066247.png" alt="Сортировать"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Жигулевская ГЭС - Сызрань I цепь</td>
+        <td><span class="status working">Работает</span></td>
+        <td>15.01.2024 18:20:44</td>
+        <td>X: 35.2824 Y: 18.1234</td>
+        <td><span class="probability green">0,0000%</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Жигулевская ГЭС - Сызрань I цепь</td>
+        <td><span class="status offline">Отключена</span></td>
+        <td>15.01.2024 18:20:44</td>
+        <td>X: 35.2824 Y: 18.1234</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Жигулевская ГЭС - Сызрань I цепь</td>
+        <td><span class="status restart">Перезагрузка</span></td>
+        <td>15.01.2024 18:20:44</td>
+        <td>X: 35.2824 Y: 18.1234</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
