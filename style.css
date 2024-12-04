@@ -53,7 +53,7 @@ header {
 .verticalLine {
   border-left: thick solid #9a9a9a;
 }
-
+  
 /* Блок пользователя */
 .user {
   display: flex;
@@ -85,13 +85,26 @@ header {
   margin: 0 25px; /* Отступы между меню и юзером */
 }
 
+.container {
+  display: flex;         /* Активируем flexbox */
+  align-items: flex-start; /* Выравнивание по верху */
+}
+
 .filters {
   margin: 16px 32px;
   display: flex;
   gap: 16px;
 }
 
+.charts {
+  margin: 16px 0px;
+  display: flex;
+  align-items: center;     /* Центрирование содержимого */
+  flex: none;
+}
+
 .filters button,
+.charts button,
 .lines {
   height: 45px; /* Общая высота для кнопок и контейнеров */
   padding: 0 12px; /* Убираем вертикальные паддинги для сохранения высоты */
@@ -105,6 +118,7 @@ header {
 }
 
 .filters button:hover,
+.charts button:hover,
 .lines:hover {
   background-color: #f0f0f0; /* Цвет фона при наведении */
   border-color: #b0b0b0; /* Цвет рамки при наведении */
@@ -126,7 +140,7 @@ header {
 }
 
 .lines select option {
-  padding: 10px; /* Отступы для опций */
+  padding: 16px; /* Отступы для опций */
   font-size: 15px;
   background-color: white; /* Исходный фон */
   color: #333; /* Исходный цвет текста */
@@ -136,7 +150,6 @@ header {
   background-color: #f0f0f0; /* Цвет фона опции при наведении */
   color: #000; /* Цвет текста при наведении */
 }
-
 
 table {
   width: calc(100% - 64px);
@@ -177,28 +190,6 @@ table th input[type="image"] {
 
 table tbody tr:last-child td {
   border-bottom: none;
-}
-
-.status {
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.status.working {
-  background-color: #e0f6e0;
-  color: #4caf50;
-}
-
-.status.offline {
-  background-color: #f0f0f0;
-  color: #3d3d3d;
-}
-
-.status.restart {
-  background-color: #fff4e5;
-  color: #ff9800;
 }
 
 .probability {
