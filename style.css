@@ -79,7 +79,7 @@ header {
 
 .divider {
   width: 2px; /* Толщина линии */
-  height: 25px; /* Высота линии */
+  height: 16px; /* Высота линии */
   background-color: #9a9a9a; /* Цвет линии */
   border-radius: 4px; /* Скругленные края */
   margin: 0 25px; /* Отступы между меню и юзером */
@@ -94,13 +94,6 @@ header {
   margin: 16px 32px;
   display: flex;
   gap: 16px;
-}
-
-.charts {
-  margin: 16px 0px;
-  display: flex;
-  align-items: center;     /* Центрирование содержимого */
-  flex: none;
 }
 
 .filters button,
@@ -118,7 +111,6 @@ header {
 }
 
 .filters button:hover,
-.charts button:hover,
 .lines:hover {
   background-color: #f0f0f0; /* Цвет фона при наведении */
   border-color: #b0b0b0; /* Цвет рамки при наведении */
@@ -207,3 +199,4 @@ table tbody tr:last-child td {
 .probability.red {
   color: #d32f2f;
 }
+
